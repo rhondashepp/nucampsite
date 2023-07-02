@@ -20,7 +20,16 @@
   </head>
 
   <body>
-    <header class="jumbotron jumbotron-fluid">
+    
+    <header class="jumbotron jumbotron-fluid" >
+     
+      <div class="col col-md-4 col-xl-2 ml-auto ">
+      <a role="button" class=" btn  btn-info  mt-4 " href="#reserveForm" >Reserve Campsite</a>
+     </div>
+    
+    
+   
+
       <div class="container">
         <div class="row">
           <div class="col-4 col-sm-3 col-md-2 align-self-center">
@@ -72,19 +81,25 @@
       </div>
       </div>
       <div class="row row-content align-items-center">
-        <div class="col-sm-4 col-md-3">
+        <div class="col-sm-4  order-sm    col-md-3">
           <h2>Featured Campsites</h2>
         </div>
         <div class="col">
+          <div class="media">
+            <img class="d-flex ml-3 img-thumbnail" src="img/img/react-lake-thumb.jpg" alt="React-Lake" />
+              <div class="media-body align-self-center">
           <h3>React Lake Campground</h3>
+        
           <p class="d-none d-sm-block">
             Nestled in the foothills of the Chrome Mountains, this campground on
             the shores of the pristine React Lake is a favorite for fly fishers.
           </p>
         </div>
       </div>
-      
-      
+       </div>
+       </div>
+    
+    
 
       <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
@@ -98,9 +113,61 @@
                   <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
               </div>
           </div>
+       </div>
       </div>
+
+
+      <div class="row row-content">
+        <div class="col col-sm-6 mx-auto">
+          <div class="card">
+            <h3 class="card-header bg-info text-white">
+              Reserve a Campsite
+            </h3>
+            <div class="card-body">
+              <form id="reserveForm">
+                <div class="form-group row">
+                  
+                  <label for="select" class="col col-sm-6 col-form-label">Number of Campers</label>
+                  <div class="col">
+                  <select name="numCampers" id="numCampers " class="form-control">
+                  <option value="select">Select</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                </select>
+                </div>
+                </div>
+
+                <div class="form-group row">
+                  
+                  <label for="date" class="col col-sm-6 col-form-label">Date</label>
+                  <div class="col col-sm-6">
+                    
+                  <input type="id" class="form-control"  name="date" placeholder="mm/dd/yyyy"/>
+                </div>
+                </div>
+             
+              
+                <div class="row">
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
       </div>
-      </div>
+     
+        </div>
+    
+ 
+  
+     
 
     <footer class="site-footer">
       <div class="container">
